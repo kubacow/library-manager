@@ -20,7 +20,7 @@ class Book:
         }
     
 class Library: 
-    def __init__(self, filename="./data/library.json") :
+    def __init__(self, filename="../data/library.json") :
         self.filename = filename
         self.books = {}
         self.load_data()

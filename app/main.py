@@ -20,7 +20,7 @@ def display_menu():
 
 def main():
     try:
-        library = Library("library.json")
+        library = Library("../data/library.json")
         print("Library database loaded successfully!")
     except LibraryDatabaseError as e:
         print(f"Error {e}")

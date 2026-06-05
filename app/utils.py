@@ -15,7 +15,7 @@ def logger(func):
             else:
                 action_info = f"Target ISBN/Value: {str(first_arg)}"
                 
-        with open("./data/log.txt", "a", encoding="utf-8") as file:
+        with open("../data/log.txt", "a", encoding="utf-8") as file:
             log_time = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
             file.write(f"[{log_time}] Called [{func.__name__}] with [{action_info}]\n")
             
@@ -31,7 +31,7 @@ class LibraryDatabaseError(Exception):
         super().__init__(message)
         
         try:
-            with open("./data/log.txt", "a", encoding="utf-8") as file:
+            with open("../data/log.txt", "a", encoding="utf-8") as file:
                 log_time = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
                 file.write(f"[{log_time}] LibraryDatabaseError occured! Skill issue!\n")
         except Exception:
