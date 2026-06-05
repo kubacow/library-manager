@@ -1,5 +1,0 @@
-[2026-06-05 15:11:17]: Executed add_book for book: "Old Man and the Sea"
-[2026-06-05 15:11:17]: Executed remove_book for book: "Old Man and the Sea"
-[2026-06-05 15:16:32]: Executed load_libary for book: "Unknown Object"
-[2026-06-05 15:17:04]: Executed load_libary for book: "Unknown Object"
-[2026-06-05 15:17:04]: Executed add_book for book: "Old Man and the Sea"
