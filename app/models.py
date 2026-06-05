@@ -20,7 +20,7 @@ class Book:
         }
     
 class Library: 
-    def __init__(self, filename="library.json") :
+    def __init__(self, filename="./data/library.json") :
         self.filename = filename
         self.books = {}
         self.load_data()
@@ -118,4 +118,4 @@ class Library:
                 data_to_save = [book.to_dict() for book in self.books.values()]
                 json.dump(data_to_save, file, indent=2, ensure_ascii=False)
         except Exception as e:
-            raise LibraryDatabaseError(f'Failed to save data: {e}')
+            raise LibraryDatabaseError(f'Failed to savedata: {e}')

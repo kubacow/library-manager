@@ -15,7 +15,7 @@ def logger(func):
             else:
                 action_info = f"Target ISBN/Value: {str(first_arg)}"
                 
-        with open("log.txt", "a", encoding="utf-8") as file:
+        with open("./data/log.txt", "a", encoding="utf-8") as file:
             log_time = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
             file.write(f"[{log_time}] Called [{func.__name__}] with [{action_info}]\n")
             
@@ -27,4 +27,12 @@ def validate_isbn(isbn):
     return bool(re.match(pattern, isbn))
 
 class LibraryDatabaseError(Exception):
-    pass
+    def __init__(self, message):
+        super().__init__(message)
+        
+        try:
+            with open("./data/log.txt", "a", encoding="utf-8") as file:
+                log_time = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+                file.write(f"[{log_time}] LibraryDatabaseError occured! Skill issue!\n")
+        except Exception:
+            pass

@@ -1,0 +1,4 @@
+
+[2026-06-05 19:47:47] Called [add_book] with [Book: 'dwa 21']
+[2026-06-05 19:48:13] Called [add_book] with [Book: '2312 321']
+[2026-06-05 19:48:13] LibraryDatabaseError occured! Skill issue!
