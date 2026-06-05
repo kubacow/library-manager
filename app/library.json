@@ -28,9 +28,44 @@
     "borrower_name": "bobert"
   },
   {
-    "isbn": "111-11-111-1111-1",
-    "title": "dawdwa",
-    "author": "dwadwa",
+    "isbn": "978-05-965-1774-8",
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "is_borrowed": false,
+    "borrower_name": null
+  },
+  {
+    "isbn": "978-01-414-3951-8",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "is_borrowed": false,
+    "borrower_name": null
+  },
+  {
+    "isbn": "978-04-515-2493-5",
+    "title": "1844: Nineteen Eighty-Four",
+    "author": "George Orwell",
+    "is_borrowed": true,
+    "borrower_name": "Anna Nowak"
+  },
+  {
+    "isbn": "978-07-475-3269-9",
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "is_borrowed": false,
+    "borrower_name": null
+  },
+  {
+    "isbn": "978-06-186-4015-7",
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "is_borrowed": true,
+    "borrower_name": "Piotr Zielinski"
+  },
+  {
+    "isbn": "978-03-453-9180-3",
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
     "is_borrowed": false,
     "borrower_name": null
   }

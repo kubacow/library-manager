@@ -1,4 +1,3 @@
-# main.py
 import sys
 from models import Library, Book
 from utils import LibraryDatabaseError
@@ -9,8 +8,8 @@ def display_menu():
     print("\n" + "="*40)
     print("---- MINI LIBRARY MANAGEMENT SYSTEM ----")
     print("="*40)
-    print("1. Display All Books (Sorted)")
-    print("2. Display Available Books Only")
+    print("1. Display All Books")
+    print("2. Display Available Books")
     print("3. Add a New Book")
     print("4. Remove a Book from Database")
     print("5. Borrow a Book")
@@ -59,7 +58,6 @@ def main():
             author = input("Enter book author: ").strip()
 
             try:
-                # Instantiate with default borrowing status as False/None
                 new_book = Book(isbn=isbn, title=title, author=author, is_borrowed=False, borrower_name=None)
                 library.add_book(new_book)
             except LibraryDatabaseError as e:
@@ -110,7 +108,7 @@ def main():
             break
 
         else:
-            print("\nPlease input a number from 1 to 8.")
+            print("\nPlease input a valid number.")
 
 if __name__ == "__main__":
     main()
