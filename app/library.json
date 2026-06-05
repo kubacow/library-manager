@@ -1,0 +1,37 @@
+[
+  {
+    "isbn": "978-83-283-0000-1",
+    "title": "Wiedźmin: Ostatnie życzenie",
+    "author": "Andrzej Sapkowski",
+    "is_borrowed": false,
+    "borrower_name": null
+  },
+  {
+    "isbn": "978-83-743-2231-7",
+    "title": "Ferdydurke",
+    "author": "Witold Gombrowicz",
+    "is_borrowed": true,
+    "borrower_name": "Jan Kowalski"
+  },
+  {
+    "isbn": "978-01-323-5088-4",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "is_borrowed": true,
+    "borrower_name": "bobert"
+  },
+  {
+    "isbn": "978-83-246-3176-6",
+    "title": "Mistrz i Małgorzata",
+    "author": "Michaił Bułhakow",
+    "is_borrowed": true,
+    "borrower_name": "bobert"
+  },
+  {
+    "isbn": "111-11-111-1111-1",
+    "title": "dawdwa",
+    "author": "dwadwa",
+    "is_borrowed": false,
+    "borrower_name": null
+  }
+]
