@@ -44,7 +44,7 @@ class Library:
             raise LibraryDatabaseError("Book already exists in database!")
         
         self.books[book.isbn] = book
-        print(f'Book {book.title} added!')
+        print(f'Book "{book.title}" added!')
         self.save_data()
     
     @logger
@@ -55,7 +55,7 @@ class Library:
         deleted_title = self.books[isbn].title
         
         del self.books[isbn]
-        print(f'Book {deleted_title} deleted!')
+        print(f'Book "{deleted_title}" deleted!')
         self.save_data()
 
     @logger
@@ -67,7 +67,7 @@ class Library:
         
         self.books[isbn].is_borrowed = True
         self.books[isbn].borrower_name = borrower_name
-        print(f'Book {self.books[isbn].title} borrowed by {borrower_name}.')
+        print(f'Book "{self.books[isbn].title}" borrowed by {borrower_name}.')
         self.save_data()
 
     @logger
@@ -79,7 +79,7 @@ class Library:
         
         self.books[isbn].is_borrowed = False
         self.books[isbn].borrower_name = None
-        print(f'Book {self.books[isbn].title} returned!')
+        print(f'Book "{self.books[isbn].title}" returned!')
         self.save_data()
 
     @logger

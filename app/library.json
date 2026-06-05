@@ -1,31 +1,31 @@
 [
   {
-    "isbn": "978-83-283-0000-1",
-    "title": "Wiedźmin: Ostatnie życzenie",
+    "isbn": "978-01-424-3723-0",
+    "title": "The Witcher: The Last Wish",
     "author": "Andrzej Sapkowski",
     "is_borrowed": false,
     "borrower_name": null
   },
   {
-    "isbn": "978-83-743-2231-7",
+    "isbn": "978-03-930-8114-6",
     "title": "Ferdydurke",
     "author": "Witold Gombrowicz",
     "is_borrowed": true,
-    "borrower_name": "Jan Kowalski"
+    "borrower_name": "John Smith"
   },
   {
     "isbn": "978-01-323-5088-4",
     "title": "Clean Code",
     "author": "Robert C. Martin",
     "is_borrowed": true,
-    "borrower_name": "bobert"
+    "borrower_name": "Robert Downey"
   },
   {
-    "isbn": "978-83-246-3176-6",
-    "title": "Mistrz i Małgorzata",
-    "author": "Michaił Bułhakow",
+    "isbn": "978-01-411-8101-1",
+    "title": "The Master and Margarita",
+    "author": "Mikhail Bulgakov",
     "is_borrowed": true,
-    "borrower_name": "bobert"
+    "borrower_name": "Robert Downey"
   },
   {
     "isbn": "978-05-965-1774-8",
@@ -43,10 +43,10 @@
   },
   {
     "isbn": "978-04-515-2493-5",
-    "title": "1844: Nineteen Eighty-Four",
+    "title": "Nineteen Eighty-Four",
     "author": "George Orwell",
     "is_borrowed": true,
-    "borrower_name": "Anna Nowak"
+    "borrower_name": "Alice Newman"
   },
   {
     "isbn": "978-07-475-3269-9",
@@ -60,12 +60,19 @@
     "title": "The Lord of the Rings",
     "author": "J.R.R. Tolkien",
     "is_borrowed": true,
-    "borrower_name": "Piotr Zielinski"
+    "borrower_name": "Peter Miller"
   },
   {
     "isbn": "978-03-453-9180-3",
     "title": "The Hitchhiker's Guide to the Galaxy",
     "author": "Douglas Adams",
+    "is_borrowed": false,
+    "borrower_name": null
+  },
+  {
+    "isbn": "111-11-111-1111-1",
+    "title": "Book of Puvee",
+    "author": "Drogg",
     "is_borrowed": false,
     "borrower_name": null
   }

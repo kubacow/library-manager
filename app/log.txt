@@ -1,5 +1,1 @@
-[2026-06-05 19:11:45] Action: get_sorted_books -> System Operation
-[2026-06-05 19:11:49] Action: borrowed_books -> System Operation
-[2026-06-05 19:13:48] Called [add_book] with [Book: 'Trollface']
-[2026-06-05 19:14:00] Called [add_book] with [Book: '']
-[2026-06-05 19:14:19] Called [add_book] with [Book: 'Trollface']
+
