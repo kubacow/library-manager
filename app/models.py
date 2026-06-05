@@ -2,6 +2,9 @@ from utils import LibraryDatabaseError, validate_isbn, logger
 import os
 import json
 
+current_dir = os.path.dirname(os.path.abspath(__file__))
+database_path = os.path.join(current_dir, "..", "data", "library.json")
+
 class Book:
     def __init__(self, isbn, title, author, is_borrowed, borrower_name):
         self.isbn = isbn
@@ -20,7 +23,7 @@ class Book:
         }
     
 class Library: 
-    def __init__(self, filename="../data/library.json") :
+    def __init__(self, filename=database_path) :
         self.filename = filename
         self.books = {}
         self.load_data()

@@ -1,7 +1,10 @@
 import sys
+import os
 from models import Library, Book
 from utils import LibraryDatabaseError
 import time
+
+
 
 def display_menu():
     time.sleep(2)
@@ -20,7 +23,10 @@ def display_menu():
 
 def main():
     try:
-        library = Library("../data/library.json")
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        database_path = os.path.join(current_dir, "..", "data", "library.json")
+
+        library = Library(database_path)
         print("Library database loaded successfully!")
     except LibraryDatabaseError as e:
         print(f"Error {e}")

@@ -6,3 +6,5 @@
 [2026-06-05 20:08:02] Called [borrowed_books] with [System Operation]
 [2026-06-05 20:08:10] Called [get_available_books] with [System Operation]
 [2026-06-05 20:08:12] Called [get_sorted_books] with [System Operation]
+[2026-06-05 21:19:27] Called [get_sorted_books] with [System Operation]
+[2026-06-05 21:21:15] Called [get_sorted_books] with [System Operation]
